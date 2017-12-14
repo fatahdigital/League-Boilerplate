@@ -3,11 +3,31 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
+var concat = require('gulp-concat');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
+
+// gulp.task('concatScripts', function () {
+//     gulp.src(['js/jquery-2.2.4.min.js', 
+//               'js/plugins.js', 
+//               'js/functions.js'
+//               'revolution/js/jquery.themepunch.tools.min.js?rev=5.0',
+//               'revolution/js/jquery.themepunch.revolution.min.js?rev=5.0',
+//               'revolution/js/extensions/revolution.extension.video.min.js',
+//               'revolution/js/extensions/revolution.extension.slideanims.min.js',
+//               'revolution/js/extensions/revolution.extension.actions.min.js',
+//               'revolution/js/extensions/revolution.extension.layeranimation.min.js',
+//               'revolution/js/extensions/revolution.extension.kenburn.min.js',
+//               'revolution/js/extensions/revolution.extension.navigation.min.js',
+//               'revolution/js/extensions/revolution.extension.migration.min.js',
+//               'revolution/js/extensions/revolution.extension.parallax.min.js'
+//               ])
+//     .pipe(concat("app.js"))
+//     .pipe(gulp.dest("js"))
+// });
 
 /**
  * Build the Jekyll Site
