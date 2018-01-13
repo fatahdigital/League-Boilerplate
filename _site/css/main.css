@@ -70,7 +70,7 @@ body, html {
   font-size: 13px; }
 
 a:active, a:focus, a:hover {
-  color: #148961;
+  color: #ffffff;
   text-decoration: none; }
 
 *, .btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus {
@@ -83,10 +83,10 @@ body, html {
   overflow-x: hidden; }
 
 body {
-  background-color: #fff;
+  background-color: #ffffff;
   font-family: Raleway,sans-serif;
   font-weight: 400;
-  color: #9b9b9b;
+  color: #ffffff;
   line-height: 1.5;
   margin: 0; }
 
