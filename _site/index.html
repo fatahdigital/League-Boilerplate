@@ -149,32 +149,34 @@
 
 </header>
 
+
+
 <!-- Hero Section
 ====================================== -->
 <section id="slider" class="slider slider-dark">
   <!-- START REVOLUTION SLIDER 5.0 -->
   <div class="rev_slider_wrapper">
     <!-- Slide #1 -->
-  <div class="slide--item">
-    <div class="bg-section">
-      <img src="assets/images/sliders/slide-bg/18.jpg" alt="background">
-    </div>
-    <div class="pos-vertical-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="slide-action mb-50">
-            </div>
-            <div class="slide--headline text-heading"><span class="typed-text" data-typed-string="Hi there!, Welcome to my Website, Make yourself @ Home "></span></div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6">
-            <div class="slide--bio text-heading">Developer, Marketer and Ping Pong Master</div>
-          </div>
-          
-        </div><!-- .row end -->
-      </div><!-- .container end -->
-    </div>
-  </div><!-- .slide-item end -->
+      <div class="slide--item">
+        <div class="bg-section">
+            <img src="assets/images/sliders/slide-bg/18.jpg" alt="background">
+        </div>
+        <div class="pos-vertical-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="slide-action mb-50">
+                </div>
+                <div class="slide--headline text-heading"><span class="typed-text" data-typed-string="Hi there!, Welcome to my Website, Make yourself @ Home "></span></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="slide--bio text-heading">Developer, Marketer and Ping Pong Master</div>
+              </div>
+              
+            </div><!-- .row end -->
+          </div><!-- .container end -->
+        </div>
+      </div><!-- .slide-item end -->
   
     <!-- END REVOLUTION SLIDER -->
   </div>
@@ -182,6 +184,179 @@
 </section>
 <!-- #hero end --><!-- Skills #4
 ============================================= -->
+
+
+
+<style>
+
+html {
+  font-size: 1.9em;
+}
+body {
+  background-color: #fff;
+
+}
+
+.social-media{
+  padding-top:50px;
+}
+/* Wrapper */
+.icon-button {
+  background-color: white;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 2.6rem;
+}
+
+/* Circle */
+.icon-button span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+  width: 0;
+}
+.icon-button:hover span {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 2.6rem;
+  margin: -1.3rem;
+}
+
+/* Icons */
+.icon-button i {
+  background: none;
+  color: white;
+  height: 2.6rem;
+  left: 0;
+  line-height: 2.6rem;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+  width: 2.6rem;
+  z-index: 10;
+}
+
+
+
+
+
+.twitter span {
+  background-color: #4099ff;
+}
+.facebook span {
+  background-color: #3B5998;
+}
+.google-plus span {
+  background-color: #db5a3c;
+}
+.tumblr span {
+  background-color: #34526f;
+}
+.instagram span {
+  background-color: #517fa4;
+}
+.youtube span {
+  background-color: #bb0000;
+}
+.linkedin span {
+  background-color: #0077b5;
+}
+
+
+
+.icon-button .fa-twitter {
+  color: #4099ff;
+}
+.icon-button .fa-facebook {
+  color: #3B5998;
+}
+.icon-button .fa-tumblr {
+  color: #34526f;
+}
+.icon-button .fa-google-plus {
+  color: #db5a3c;
+}
+.icon-button .fa-instagram {
+  color: #517fa4;
+}
+.icon-button .fa-youtube {
+  color: #bb0000;
+}
+.icon-button .fa-linkedin {
+  color: #0077b5;
+}
+
+
+
+
+.icon-button:hover .fa-twitter,
+.icon-button:hover .fa-facebook,
+.icon-button:hover .fa-google-plus,
+.icon-button:hover .fa-tumblr,
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-youtube,
+.icon-button:hover .fa-pinterest,
+.icon-button:hover .fa-linkedin{
+  color: white;
+}
+
+@media all and (max-width: 680px) {
+  .icon-button {
+    border-radius: 1.6rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .icon-button:hover span {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
+    margin: -0.8rem;
+  }
+
+  /* Icons */
+  .icon-button i {
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+  body {
+
+    padding: 10px;
+  }
+  .pinterest {
+   display: none; 
+  }
+
+}
+
+
+</style>
+
 
 <section id="workflow" class="workflow">
     <div class="heading heading-2 mb-40 text--center">
@@ -215,9 +390,15 @@
               </div>
               <div class="col-xs-12 col-sm-7 col-md-6 pl-0">
                 <div class="col-content bg-white">
-                  <h4>On a quest to Optimize the World</h4>
-                  <p>Hi there, my name is Alejandro Diez and I'm a Web-Developer / Digital-Marketer. I build kick ass brands that tell awesome stories and have a passion for digital solutions. In this site you can see my background and previous work, current projects and future goals, hopefully we share some in common.</p>
-                  <a class="btn btn--primary mt-20" href="#">Look me up</a>
+                  <h4>Your Digital Partner</h4>
+                  <p>My name is Alejandro Diez and I'm a Web-Developer / Digital-Marketer. I build kick ass brands that tell awesome stories and have a passion for digital solutions. In this site you can see my background and previous work, current projects and future goals, hopefully we share some in common.</p>
+                  
+                  <div class="social-media">
+                      <a href="#" class="icon-button twitter"><i class="fa fa-twitter"></i><span></span></a>
+                      <a href="#" class="icon-button facebook"><i class="fa fa-facebook"></i><span></span></a>
+                      <a href="#" class="icon-button linkedin"><i class="fa fa-linkedin"></i><span></span></a>
+                      <a href="#" class="icon-button youtube"><i class="fa fa-youtube"></i><span></span></a>
+                  </div>
                 </div>
               </div>
             </div><!-- .row end -->
@@ -233,13 +414,28 @@
 </section> <!-- #workflow end -->
 
 
+
+
+
+<style>
+.title-area {
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 50px; 
+}
+
+</style>
+
 <section id="feature3" class="feature feature-left feature-heading feature-3 bg-white">
 	<div class="container">
+		<div class= "title-area">
 		<div class="row">
     <div class="heading heading-2 mb-40 text--center">
+    	
           <p class="heading--subtitle">Now this is</p>
           <h2 class="heading--title">What I do</h2>
           <div class="divider--line divider--center"></div>
+     
     </div>
 			<!-- Panel #1 -->
 			<div class="col-xs-12 col-sm-4 col-md-4">
@@ -256,7 +452,7 @@
 			<div class="col-xs-12 col-sm-4 col-md-4">
 				<div class="feature-panel">
 					<div class="feature--content">
-						<h3>Email Marketing and CRM</h3>
+						<h3>CRM</h3>
 						<p>Email Marketing platforms like MailChimp and Customer Relationship Managemenet software like Salesforce are the new standard in managing customer interaction.   </p>
 					</div>
 				</div><!-- .feature-panel end -->
@@ -266,22 +462,49 @@
 			<div class="col-xs-12 col-sm-4 col-md-4">
 				<div class="feature-panel">
 					<div class="feature--content">
-						<h3>Digital Marketing and SEO</h3>
+						<h3>Digital Marketing </h3>
 						<p>At its core, every brand has something special to reveal something that inspires people this plan if you plan to create a small portfolio or busines showcase for you studio or business company.</p>
 					</div>
 				</div><!-- .feature-panel end -->
 			</div><!-- .col-md-4 end -->
+
 		</div><!-- .row end -->
+	</div> <!-- title-area-->
+	
 	</div><!-- .container end -->
+
 </section><!-- .feature3 end -->
+
+
+<style>
+.workflow {
+
+    padding: 50px; 
+}
+
+</style>
+
+<section id="workflow" class="workflow">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+        <div class="heading heading-2 mb-50 text--center">
+          <p class="heading--subtitle">Here's some of my</p>
+          <h2 class="heading--title heding--center">Recent Work</h2>
+          <div class="divider--line divider--center"></div>
+        </div>
+      </div><!-- .col-md-8 end -->
+    </div><!-- .row end -->
+  </div>
+  <!-- .container end -->
+</section>
+<!-- #skills4 end -->
+
 
 <!-- Portfolio 4 Column
 ============================================= -->
-    <div class="heading heading-2 mb-40 text--center">
-          <p class="heading--subtitle">Here you can see</p>
-          <h2 class="heading--title">Some of my Work</h2>
-          <div class="divider--line divider--center"></div>
-    </div>
+
+
 
 <section id="portfolio" class="section portfolio portfolio-gallery portfolio-4col pt-0 pb-0">
 	<div class="container-fluid pr-0 pl-0">
