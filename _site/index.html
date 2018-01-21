@@ -785,17 +785,19 @@ body {
 	</div><!-- .container end -->
 </section><!-- #testimonial2 end -->
 
-<!-- Contact
-============================================= -->
+
+    <style>
+       #map {
+        height: 500px;
+        width: 100%;
+       }
+    </style>
+
 <section id="contact" class="contact pb-0 pt-0">
 	<div class="container-fluid pr-0 pl-0">
 		<div class="row">
 			<div class="col-xs-12  col-sm-12  col-md-12 pr-0 pl-0">
-				<div class="bg-overlay" style="width:100%;height:498px;">
-					<div class="bg-section">
-						<img src="assets/images/background/bg-11.jpg" alt="background">
-					</div>
-				</div>
+    <div id="map"></div>
 			</div>
 		</div>
 	</div>
@@ -841,6 +843,24 @@ body {
 		</div><!-- .row end -->
 	</div><!-- .container end -->
 </section><!-- #contact end -->
+
+    <script>
+      function initMap() {
+        var uluru = {lat: 30.267153, lng: -97.743061};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrfqxnEuRipCDCjiYgF4LJ4CyfFn4r2kw&callback=initMap">
+    </script>
+
 
 
 
